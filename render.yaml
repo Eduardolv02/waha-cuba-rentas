@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: waha-cuba-rentas
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: WAHA_API_PORT
+        value: "3000"
+      - key: WAHA_VERSION
+        value: "latest"
